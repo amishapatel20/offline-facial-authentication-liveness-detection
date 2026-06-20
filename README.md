@@ -1,97 +1,180 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Offline Facial Authentication & Liveness Detection System
 
-# Getting Started
+## Overview
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Offline Facial Authentication & Liveness Detection System is a React Native based mobile application developed for secure identity verification in low-connectivity and offline environments.
 
-## Step 1: Start Metro
+The application performs:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+* Face Capture using the device camera
+* Facial Authentication
+* Liveness Detection
+* Offline Verification Workflow
+* Result Generation and User Feedback
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+The project was developed as part of a hackathon focused on secure, privacy-preserving authentication solutions that can operate without continuous internet connectivity.
 
-```sh
-# Using npm
+---
+
+## Features
+
+### Face Registration
+
+* Capture user's facial image
+* Store reference data locally
+* Offline enrollment process
+
+### Liveness Detection
+
+* Detect whether a real person is present
+* Prevent spoofing using photographs or screen replays
+* Improve authentication security
+
+### Facial Authentication
+
+* Compare captured face against registered user
+* Verify identity locally on device
+* No cloud dependency
+
+### Offline Operation
+
+* Works without internet connectivity
+* Suitable for remote and low-network areas
+* Faster response time and improved privacy
+
+### Result Screen
+
+* Authentication Success
+* Authentication Failure
+* Liveness Detection Status
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React Native
+* TypeScript
+
+### Mobile Development
+
+* Android Studio
+* React Native CLI
+
+### Camera Integration
+
+* react-native-camera-kit
+
+### Development Tools
+
+* VS Code
+* Git
+* GitHub
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── screens/
+│   ├── HomeScreen.tsx
+│   ├── CameraScreen.tsx
+│   ├── LivenessScreen.tsx
+│   └── ResultScreen.tsx
+│
+├── navigation/
+│
+└── components/
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/amishapatel20/offline-facial-authentication-liveness-detection.git
+```
+
+### Move into Project
+
+```bash
+cd offline-facial-authentication-liveness-detection
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Metro
+
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Build and run your app
+### Run Android Application
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npx react-native run-android
 ```
 
-### iOS
+---
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## Current Development Status
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Completed
 
-```sh
-bundle install
-```
+* React Native project setup
+* Camera integration
+* Multi-screen workflow
+* Navigation structure
+* Android deployment
 
-Then, and every time you update your native dependencies, run:
+### In Progress
 
-```sh
-bundle exec pod install
-```
+* Advanced liveness detection
+* Face matching module
+* Secure offline storage
+* Authentication scoring
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+---
 
-```sh
-# Using npm
-npm run ios
+## Future Enhancements
 
-# OR using Yarn
-yarn ios
-```
+* Blink detection
+* Head movement verification
+* Face embeddings
+* On-device machine learning
+* Multi-user support
+* Encrypted local database
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Use Cases
 
-## Step 3: Modify your app
+* Secure attendance systems
+* Government verification systems
+* Rural authentication solutions
+* Offline access control
+* Identity verification in remote locations
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## Authors
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+**Amisha Patel**
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+Integrated MSc Mathematics
+National Institute of Technology Rourkela
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## License
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is developed for educational, research, and hackathon purposes.
